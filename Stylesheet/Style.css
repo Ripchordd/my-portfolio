@@ -1,0 +1,388 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+body{
+    background-color: #0A0F1D;
+    min-height: 100vh;
+    font-size: 12px;
+}
+
+.container{
+    min-height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 9;
+   padding-top: 60px;
+   
+}
+
+.intro{
+   color: white;
+}
+.row-item {
+   display: flex;
+   color: gray;
+   justify-content: center;
+   align-items: center;
+   padding:0px 250px;
+}
+
+.watermark{
+position: absolute;
+text-align: center;
+width: 100%;
+font-size: 80px;
+text-transform: uppercase;
+z-index: -1;
+opacity: 0.05;
+font-weight: bold;
+}
+
+.section-title{
+   position: absolute;
+   width: 100%;
+   z-index: 8;
+}
+.column {
+   display: flex;
+   flex-direction: column;
+}
+.no-bullet {
+   list-style: none;
+}
+
+.circular-icon {
+   padding: 10px;
+   border: 1px solid silver;
+   margin: 5px;
+   border-radius: 50%;
+   width: 12px;
+   height: 12px;
+   text-align: center;
+}
+header{
+   background-image: url(../Mountain.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
+}
+main{
+    height: inherit;
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12px 0px 12px;
+    position: fixed;
+    width: 95%;    
+ }
+
+ nav ul {
+    display: flex;
+    gap: 18px;
+    
+ }
+
+ nav ul li {
+    list-style: none;
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: silver;
+    text-transform: uppercase;
+ }
+
+ .active, .name, h2 {
+    color: gold;
+ }
+
+ h1 {
+    font-size: 32px;
+    color: white;
+ }
+
+ .hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: center;
+    text-align: center;
+     /* border: 1px solid blue; */
+ }
+
+ .hero-card p {
+    text-align: center;
+    font-size: 14px;
+ }
+ 
+ .facebook{
+   display: inline-block;
+   border-radius: 20px;
+   color: blue;
+   font-size: 15px;
+   line-height: 15px;
+   vertical-align: middle;
+   background: (2,0,36);
+   background: linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(255,255,255,1) 35%,(0,212,255,1) 100%);   
+ }
+
+ .twitter{
+   display: inline-block;
+   border-radius: 20px;
+   color: turquoise;
+   font-size: 15px;
+   line-height: 15px;
+   vertical-align: middle;
+   background: (2,0,36);
+   background: linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(255,255,255,1) 35%,(0,212,255,1) 100%);
+ }
+
+ .instagram{
+   display: inline-block;
+   border-radius: 40px;
+   color: #fff;
+   font-size: 15px;
+   line-height: 15px;
+   vertical-align: middle;
+   background: #d6249f;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); 
+ }
+
+ .whatsapp {
+   display: inline-block;
+   color: green;
+   
+ }
+
+ .image{
+   /* flex: 1 0 220px; */
+   width: 50%;
+ }
+
+ .details{
+   /* flex: 8 0 300px; */
+   font-size: 14px;
+   word-spacing: 2px;
+   padding: 20px;
+   width: 50%;
+ }
+
+ section>div {
+   min-height: 300px;
+   z-index: 9;
+ }
+
+ .mypic{
+   width: 60%;
+   height: auto;
+ }
+
+ .Resume{
+   background-color:gold;
+   font-weight: bold;
+   border-radius: 20px;
+   border: none;
+   padding: 8px;
+   margin-top: 30px;
+ }
+
+ h2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-decoration: underline;
+   text-decoration-style: solid;
+   text-transform: uppercase;
+   margin-top: 15px;
+   margin-bottom: 25px;
+   height: 1.2rem;
+ }
+.card-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 75%;
+   margin-left: 12.5%;
+   margin-right: 12.5%;
+   margin-top: 40px;
+   /* border: 1px solid silver; */
+}
+ .card{
+   background-color: #0F1523;
+   flex: 1 0 20%;
+   margin: 8px;
+   border-radius: 5px;
+   border: 1px solid rgba(128, 128, 128, 0.568);
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .card p{
+   text-align: center;
+   color: gray;
+ }
+
+ .section-title-bold{
+   display: block;
+   height: 30px;
+   
+ }
+
+ .column {
+   display: flex;
+   flex-direction: column;
+   flex: 6;
+ }
+
+ #skills-intro{
+  padding-top: 5px;
+ }
+
+ .skill-counter {
+   width: 100%;
+   background-color: rgba(192, 192, 192, 0.349);
+   height: 4px;
+   margin-bottom: 13px;
+   display: flex;
+   justify-content: flex-start;
+   overflow: hidden;
+
+ }
+
+ #Html{
+   background-color: gold;
+   width: 95%;
+ }
+
+ #CSS{
+   background-color: gold;
+   width: 70%;
+ }
+
+ #TAILWIND{
+   background-color: gold;
+   width: 50%;
+ }
+
+ #JAVASCRIPT{
+   background-color: gold;
+   width: 5%;
+ }
+
+ #REACT{
+   background-color: gold;
+   width: 0%;
+ }
+
+ ul li{
+   list-style: none;
+ }
+
+ #my-skills{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+ }
+
+ #skill-row{
+   justify-content: space-between;
+   padding-top: 8px;
+ }
+
+ #skills-row {
+   padding: 0px 17% 0px 17%;
+   align-items: flex-start;
+ }
+
+ .mainlogo{
+  height: 120px;
+  width: 150px;
+ }
+ 
+ .logo{
+  height: 35px;
+  width: 35px;
+ }
+
+ .return{
+  position: fixed;
+  margin-top: calc(100vh - 125px);
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0px 12px 0px 12px; */
+  margin-left: 90%;
+  background-color:silver;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  font-size: 15px;
+  background-color: rgba(0, 0, 255, 0.123);
+  width: 100%;
+  padding: 20px;
+  min-height: 20px;
+  /* border: 1px solid yellow; */
+  height: 200px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: rgb(101, 101, 119);
+}
+
+ul li{
+  margin-bottom: 20px;
+}
+
+.footerlogo{
+  justify-content: center;
+  padding: 0px 600px 0px 600px;
+  width: min-content;
+}
+.mobile-nav{
+  display: none;
+}
+@media(max-width:475px){
+  .desktop-nav{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+    display: flex;
+    justify-content: right;
+  }
+}
+
+input, textarea{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 9;
+}
