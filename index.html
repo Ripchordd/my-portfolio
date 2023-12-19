@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Asset/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/aos@next/dist/aos.css' rel='stylesheet'/>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+  
 </head>
 <body>
     <div class="container">
@@ -16,11 +16,15 @@
             <header id="top">
                 <nav class="desktop-nav">
                     <img class="mainlogo" src="Ripchordlogo.png" alt="Logo" data-aos="flip-left" data-aos-delay="5" data-aos-duration="2000" data-aos-easing='ease-out-cubic' data-aos-mirror='true' data-aos-once='false'>
-                    <ul>
-                        <li><a class="active" href="">Home</a></li>
-                        <li><a href="">About</a></li>
+                    <div class="" onclick="click1(this)">Hello</div>
+
+
+
+                    <ul class="nav-link">
+                        <li onclick="click(this)"><a onclick="click(this)" class="active" href="">Home</a></li>
+                        <li onclick="click(this)"><a href="">About</a></li>
                         <li><a href="">Resume</a></li>
-                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Services</a></li>
                         <li><a href="">Contact</a></li>
                         <li>|</li>
                         <li class="active"> <a class="active" href="tel:2347086559541"> +2347086559541</a></li>
@@ -285,5 +289,22 @@ AOS.init({
 
 });
       </script>
+
+        <script>
+        var currIndex = 0;
+
+        function click1(elem) {
+            
+            const navLinks = document.querySelector('.nav-link');
+
+            let itm = navLinks.findIndex(elem)
+            // alert("Hello")
+            console.log(itm)
+
+            elem.classList.toggle("active")
+
+            // navLinks[currIndex].toggleClass('active');
+        }
+    </script>
 </body>
 </html>
